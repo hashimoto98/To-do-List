@@ -1,0 +1,103 @@
+/* Define as variáveis de cor para os temas claro e escuro */
+:root {
+  /* Tema Claro (Padrão) */
+  --background-page: #f4f7f6; /* Branco gelo */
+  --background-container: #ffffff;
+  --background-header: #fdfdfd;
+  --text-primary: #213547;
+  --text-secondary: #555;
+  --text-completed: #aaa;
+  --border-color: #ddd;
+  --input-bg: #f9f9f9;
+  --button-bg: #f0f0f0;
+  --button-hover-bg: #e0e0e0;
+  --task-bg: #ffffff;
+  --task-hover-bg: #f9f9f9;
+  --theme-toggle-hover: rgba(0, 0, 0, 0.05);
+
+  /* Cores de Ação */
+  --brand-color: #646cff;
+  --brand-color-hover: #535bf2;
+  --error-bg: #ff4757;
+  --error-text: #ffffff;
+}
+
+[data-theme='dark'] {
+  /* Tema Escuro */
+  --background-page: #2f3640; /* Cinza chumbo */
+  --background-container: #1e1e1e;
+  --background-header: #242424;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888;
+  --text-completed: #777;
+  --border-color: #3a3a3a;
+  --input-bg: #333;
+  --button-bg: #333;
+  --button-hover-bg: #444;
+  --task-bg: #2a2a2a;
+  --task-hover-bg: #333333;
+  --theme-toggle-hover: rgba(255, 255, 255, 0.1);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--background-page);
+  color: var(--text-primary);
+  min-width: 320px;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--brand-color);
+  color: var(--error-text);
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+button:hover {
+  border-color: var(--brand-color-hover);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: var(--background-page);
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

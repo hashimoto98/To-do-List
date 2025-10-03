@@ -1,0 +1,60 @@
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #18181b;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  background: #646cff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}
+
+.tasksList {
+  margin-top: 2rem;
+}
+
+.tasksList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tasksList li {
+  background: #23232a;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
